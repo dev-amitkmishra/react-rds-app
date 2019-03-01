@@ -1,5 +1,0 @@
-export const FETCH_RATING = 'FETCH_RATING';
-export const UPDATE_RATING = 'UPDATE_RATING';
-export const CHANGE_LIST = 'CHANGE_LIST'
-
-export const TOGGLE_LOADING = 'TOGGLE_LOADING';

@@ -1,26 +1,21 @@
 import React, { Component } from 'react';
-import { Route, Switch, withRouter, Redirect } from 'react-router-dom';
-
-import DashBoard from './containers/DashBoard';
+import logo from './logo.svg';
+import './App.css';
 
 class App extends Component {
-
   render() {
-
-    let routes = (
-      <Switch>
-        <Route path="/" exact component={DashBoard} />
-        <Redirect to="/" />
-      </Switch>
-    );
-
     return (
-      <div>
-        {routes}
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h1 className="App-title">Welcome to React</h1>
+        </header>
+        <p className="App-intro">
+          To get started, edit <code>src/App.js</code> and save to reload.
+        </p>
       </div>
-    )
+    );
   }
 }
 
-
-export default withRouter(App);
+export default App;

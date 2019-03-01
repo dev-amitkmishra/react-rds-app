@@ -4,24 +4,17 @@
   "description": "FrontEnd test @ TruRating",
   "main": "index.js",
   "dependencies": {
-    "axios": "^0.18.0",
-    "cors": "^2.8.5",
     "express": "^4.16.3",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-redux": "^6.0.0",
-    "react-router": "^4.3.1",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4",
-    "react-sweet-progress": "^1.1.2",
-    "redux": "^4.0.1",
-    "redux-saga": "^1.0.2"
+    "react-scripts": "1.1.4"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "cd client && react-scripts test --env=jsdom",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "client": "cd client && react-scripts start",
     "build": "cd client && react-scripts build",
+    "test": "cd client && react-scripts test --env=jsdom",
     "server": "cd server && node server.js"
   },
   "author": "Giorgia",
