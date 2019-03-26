@@ -66,10 +66,9 @@ Your task is developing an app that:
         - between 8 and 9 the bar should be green (#62DDA9)
     - In case of no value for a specific metric, shows the name of the metric, with an empty bar and the following text: "No data for [your measure name] yet"
 - Allows you to toggle between online and instore data
+- Implement the routes so that when clicking through one of the panels, you go to '/{selectedMeasure}' (i.e. if I click on Value, I visit '/value') and show the name of the selected measure on the page with the text in the color of the metric you have selected).
 
-It would also be great to see some tests as part of your task :) but don't worry if you are running out of time.
-
-If you are running out of time, concentrate on loading data from the API and handle the app loading state and coloring the progress bar based on the value returned rather than making the design looks perfect.
+Please do make sure you write tests as part of your task including the mock for the loading state.
 
 
 
