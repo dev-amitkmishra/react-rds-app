@@ -70,7 +70,7 @@ Your task is developing an app that:
 
 Please do make sure you write tests as part of your task including the mock for the loading state.
 
-##Note
+## Note
 Please create your own repo and share it only with me and complete the tasks, submit the completed assignement on or before 30-Apr-2019
 
 
