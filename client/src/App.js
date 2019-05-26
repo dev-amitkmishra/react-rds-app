@@ -1,19 +1,29 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import Aux from './hoc/_aux';
+import Header from './Toolbar/Header/Header';
+import Footer from './Toolbar/Footer/Footer';
+import Body from './Container/Body/Main';
 
 class App extends Component {
+  state = {
+    instore: true,
+    selectedCard: []
+  }
+  changeHandler = ($event) => {
+    this.setState(prevState => ({
+      instore: !prevState.instore
+    }));
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+        <Aux>
+            <Header changed={this.changeHandler}/>
+              <Body type={this.state.instore}/>
+            <Footer/>
+        </Aux>
     );
   }
 }
